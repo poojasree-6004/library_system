@@ -1,47 +1,55 @@
 {
-  "name": "bcryptjs",
-  "description": "Optimized bcrypt in plain JavaScript with zero dependencies. Compatible to 'bcrypt'.",
-  "version": "2.4.3",
-  "author": "Daniel Wirtz <dcode@dcode.io>",
+  "name": "body-parser",
+  "description": "Node.js body parsing middleware",
+  "version": "1.20.5",
   "contributors": [
-    "Shane Girish <shaneGirish@gmail.com> (https://github.com/shaneGirish)",
-    "Alex Murray <> (https://github.com/alexmurray)",
-    "Nicolas Pelletier <> (https://github.com/NicolasPelletier)",
-    "Josh Rogers <> (https://github.com/geekymole)",
-    "Noah Isaacson <noah@nisaacson.com> (https://github.com/nisaacson)"
+    "Douglas Christopher Wilson <doug@somethingdoug.com>",
+    "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)"
   ],
-  "repository": {
-    "type": "url",
-    "url": "https://github.com/dcodeIO/bcrypt.js.git"
-  },
-  "bugs": {
-    "url": "https://github.com/dcodeIO/bcrypt.js/issues"
-  },
-  "keywords": [
-    "bcrypt",
-    "password",
-    "auth",
-    "authentication",
-    "encryption",
-    "crypt",
-    "crypto"
-  ],
-  "main": "index.js",
-  "browser": "dist/bcrypt.js",
-  "dependencies": {},
-  "devDependencies": {
-    "testjs": "~1",
-    "closurecompiler": "~1",
-    "metascript": "~0.18",
-    "bcrypt": "latest",
-    "utfx": "~1"
-  },
   "license": "MIT",
+  "repository": "expressjs/body-parser",
+  "dependencies": {
+    "bytes": "~3.1.2",
+    "content-type": "~1.0.5",
+    "debug": "2.6.9",
+    "depd": "2.0.0",
+    "destroy": "~1.2.0",
+    "http-errors": "~2.0.1",
+    "iconv-lite": "~0.4.24",
+    "on-finished": "~2.4.1",
+    "qs": "~6.15.1",
+    "raw-body": "~2.5.3",
+    "type-is": "~1.6.18",
+    "unpipe": "~1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "8.34.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-markdown": "3.0.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-standard": "4.1.0",
+    "methods": "1.1.2",
+    "mocha": "10.2.0",
+    "nyc": "15.1.0",
+    "safe-buffer": "5.2.1",
+    "supertest": "6.3.3"
+  },
+  "files": [
+    "lib/",
+    "LICENSE",
+    "HISTORY.md",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">= 0.8",
+    "npm": "1.2.8000 || >= 1.4.16"
+  },
   "scripts": {
-    "test": "node node_modules/testjs/bin/testjs",
-    "build": "node scripts/build.js",
-    "compile": "node node_modules/closurecompiler/bin/ccjs dist/bcrypt.js --compilation_level=SIMPLE_OPTIMIZATIONS --create_source_map=dist/bcrypt.min.map > dist/bcrypt.min.js",
-    "compress": "gzip -c -9 dist/bcrypt.min.js > dist/bcrypt.min.js.gz",
-    "make": "npm run build && npm run compile && npm run compress && npm test"
+    "lint": "eslint .",
+    "test": "mocha --require test/support/env --reporter spec --check-leaks --bail test/",
+    "test-ci": "nyc --reporter=lcov --reporter=text npm test",
+    "test-cov": "nyc --reporter=html --reporter=text npm test"
   }
 }
