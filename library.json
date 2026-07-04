@@ -1,0 +1,95 @@
+{
+  "nextIds": {
+    "users": 1,
+    "books": 1,
+    "loans": 1,
+    "payments": 1,
+    "feedback": 1
+  },
+  "users": [],
+  "books": [
+    {
+      "id": 1,
+      "title": "Data Structures and Algorithms",
+      "author": "Narasimha Karumanchi",
+      "copies_total": 5,
+      "copies_available": 5,
+      "added_at": "2026-07-04T10:37:44.061Z"
+    },
+    {
+      "id": 2,
+      "title": "Introduction to Algorithms",
+      "author": "Cormen, Leiserson, Rivest, Stein",
+      "copies_total": 5,
+      "copies_available": 5,
+      "added_at": "2026-07-04T10:37:44.061Z"
+    },
+    {
+      "id": 3,
+      "title": "Artificial Intelligence: A Modern Approach",
+      "author": "Russell & Norvig",
+      "copies_total": 5,
+      "copies_available": 5,
+      "added_at": "2026-07-04T10:37:44.061Z"
+    },
+    {
+      "id": 4,
+      "title": "The C Programming Language",
+      "author": "Kernighan & Ritchie",
+      "copies_total": 5,
+      "copies_available": 5,
+      "added_at": "2026-07-04T10:37:44.061Z"
+    },
+    {
+      "id": 5,
+      "title": "Operating System Concepts",
+      "author": "Silberschatz, Galvin, Gagne",
+      "copies_total": 5,
+      "copies_available": 5,
+      "added_at": "2026-07-04T10:37:44.061Z"
+    },
+    {
+      "id": 6,
+      "title": "Computer Networking: A Top-Down Approach",
+      "author": "Kurose & Ross",
+      "copies_total": 5,
+      "copies_available": 5,
+      "added_at": "2026-07-04T10:37:44.061Z"
+    },
+    {
+      "id": 7,
+      "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+      "author": "Gamma, Helm, Johnson, Vlissides",
+      "copies_total": 5,
+      "copies_available": 5,
+      "added_at": "2026-07-04T10:37:44.061Z"
+    },
+    {
+      "id": 8,
+      "title": "Database System Concepts",
+      "author": "Silberschatz, Korth, Sudarshan",
+      "copies_total": 5,
+      "copies_available": 5,
+      "added_at": "2026-07-04T10:37:44.061Z"
+    },
+    {
+      "id": 9,
+      "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+      "author": "Robert C. Martin",
+      "copies_total": 5,
+      "copies_available": 5,
+      "added_at": "2026-07-04T10:37:44.061Z"
+    },
+    {
+      "id": 10,
+      "title": "The Pragmatic Programmer",
+      "author": "Hunt & Thomas",
+      "copies_total": 5,
+      "copies_available": 5,
+      "added_at": "2026-07-04T10:37:44.061Z"
+    }
+  ],
+  "loans": [],
+  "payments": [],
+  "feedback": []
+}
